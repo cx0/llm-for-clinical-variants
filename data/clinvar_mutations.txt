@@ -1,5 +1,0 @@
-clinvar_id	genomic_sub	protein_sub	gene	significance
-29100	NM_000258.3(MYL3):c.445A>G	M149V	MYL3	Pathogenic
-29101	NM_000258.3(MYL3):c.461G>A	A154H	MYL3	Uncertain significance
-29102	NM_000258.3(MYL3):c.427G>A	G143L	MYL3	Conflicting interpretations of pathogenicity
-29103	NM_000432.4(MYL2):c.37G>A 	A13T	MYL2	Conflicting interpretations of pathogenicity

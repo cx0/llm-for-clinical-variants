@@ -11,6 +11,7 @@ from Bio import SeqIO
 import itertools
 from typing import List, Tuple
 import numpy as np
+from utils import read_fasta
 
 
 def remove_insertions(sequence: str) -> str:
@@ -47,11 +48,6 @@ def create_parser():
         type=str,
         help="PyTorch model file OR name of pretrained model to download (see README for models)",
         nargs="+",
-    )
-    parser.add_argument(
-        "--sequence",
-        type=str,
-        help="Base sequence to which mutations will be applied",
     )
     parser.add_argument(
         "--bg-mut-input",
@@ -142,7 +138,6 @@ def get_all_background_sequences(sequence, bg_mutations, offset_idx):
 
 def compute_pppl(row, sequence, model, alphabet, offset_idx):
     wt, idx, mt = row[0], int(row[1:-1]) - offset_idx, row[-1]
-    assert sequence[idx] == wt, "The listed wildtype does not match the provided sequence"
 
     # modify the sequence
     sequence = sequence[:idx] + mt + sequence[(idx + 1) :]
@@ -172,20 +167,20 @@ def compute_pppl(row, sequence, model, alphabet, offset_idx):
 def main(args):
     # Load the background mutation data
     all_mut_df = pd.read_csv(args.bg_mut_input, sep='\t')
-    seq_dict = read_fasta(args.sequence_file)
+    seq_dict = read_fasta(args.seq_input)
     results = pd.DataFrame()
 
-    # inference across all sequences
-    for gene, sequence in seq_dict.items():
-        mut_df = all_mut_df[all_mut_df[args.gene_col == gene]]
-        # inference for each model
-        for model_location in args.model_location:
-            model, alphabet = pretrained.load_model_and_alphabet(model_location)
-            model.eval()
-            if torch.cuda.is_available() and not args.nogpu:
-                model = model.cuda()
-                print("Transferred model to GPU")
-
+    # inference for each model
+    for model_location in args.model_location:
+        model, alphabet = pretrained.load_model_and_alphabet(model_location)
+        model.eval()
+        if torch.cuda.is_available() and not args.nogpu:
+            model = model.cuda()
+            print("Transferred model to GPU")
+        # inference across all sequences
+        for gene, sequence in tqdm(seq_dict.items()):
+            mut_df = all_mut_df[all_mut_df[args.gene_col] == gene]
+            
             batch_converter = alphabet.get_batch_converter()
 
             if isinstance(model, MSATransformer):
@@ -217,7 +212,10 @@ def main(args):
                 data = get_all_background_sequences(sequence, mut_df[args.mutation_col], args.offset_idx)
                 batch_labels, batch_strs, batch_tokens = batch_converter(data)
                 with torch.no_grad():
-                    token_probs = torch.log_softmax(model(batch_tokens.cuda())["logits"], dim=-1)
+                    if args.nogpu:
+                        token_probs = torch.log_softmax(model(batch_tokens)["logits"], dim=-1)
+                    else:
+                        token_probs = torch.log_softmax(model(batch_tokens.cuda())["logits"], dim=-1)
 
                 if args.scoring_strategy == "wt-marginals":
                     for i in range(token_probs.shape[0]):
@@ -229,7 +227,7 @@ def main(args):
                                 token_probs[i, :, :], 
                                 alphabet, 
                                 args.offset_idx
-                                )
+                                ).assign(gene=gene)
                             )
                 elif args.scoring_strategy == "masked-marginals":
                     all_token_probs = []
