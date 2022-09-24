@@ -1,4 +1,5 @@
 import argparse
+import os
 import pathlib
 import string
 
@@ -72,15 +73,21 @@ def create_parser():
         help="Name of gene column in mutation file"
     )
     parser.add_argument(
-        "--output",
+        "--output-path",
         type=pathlib.Path,
-        help="Output file containing the predictions",
+        help="Output path containing the predictions",
     )
     parser.add_argument(
         "--offset-idx",
         type=int,
         default=1,
         help="Offset of the mutation positions in `--mutation-col`"
+    )
+    parser.add_argument(
+        "--mut-chunks",
+        type=int,
+        default=5,
+        help="Number of background mutations to process at a time, tweak for avail gpu mem"
     )
     parser.add_argument(
         "--scoring-strategy",
@@ -110,7 +117,7 @@ def parse_mutation(mut, offset_idx):
     return wt, idx, mt
 
 
-def mut_scan(model_name, bgmut, sequence, token_probs, alphabet, offset_idx):
+def mut_scan(args, model_name, bgmut, sequence, token_probs, alphabet, offset_idx):
     scores = [
             [
                 model_name,
@@ -124,7 +131,7 @@ def mut_scan(model_name, bgmut, sequence, token_probs, alphabet, offset_idx):
             for token, token_idx in alphabet.to_dict().items()
             for seq_idx, residue in enumerate(sequence)
     ]
-    return pd.DataFrame(scores, columns=["model", "background_mutation", "residue", "sequence_idx", "score"])
+    return pd.DataFrame(scores, columns=["model", args.mutation_col, "residue", "sequence_idx", "score"])
 
 
 
@@ -164,11 +171,18 @@ def compute_pppl(row, sequence, model, alphabet, offset_idx):
     return sum(log_probs)
 
 
+def outfname(gene):
+    return args.output_path / f'mutscan_{gene}.tsv'
+
+
 def main(args):
     # Load the background mutation data
     all_mut_df = pd.read_csv(args.bg_mut_input, sep='\t')
     seq_dict = read_fasta(args.seq_input)
-    results = pd.DataFrame()
+    seq_dict = {
+        gene: seq for gene, seq in seq_dict.items() 
+        if len(seq) <= 200 and not os.path.exists(outfname(gene))
+    }
 
     # inference for each model
     for model_location in args.model_location:
@@ -179,56 +193,44 @@ def main(args):
             print("Transferred model to GPU")
         # inference across all sequences
         for gene, sequence in tqdm(seq_dict.items()):
+            results = pd.DataFrame()
             mut_df = all_mut_df[all_mut_df[args.gene_col] == gene]
             
             batch_converter = alphabet.get_batch_converter()
 
-            if isinstance(model, MSATransformer):
-                data = [read_msa(args.msa_path, args.msa_samples)]
-                assert (
-                    args.scoring_strategy == "masked-marginals"
-                ), "MSA Transformer only supports masked marginal strategy"
-
-                batch_labels, batch_strs, batch_tokens = batch_converter(data)
-
-                all_token_probs = []
-                for i in tqdm(range(batch_tokens.size(2))):
-                    batch_tokens_masked = batch_tokens.clone()
-                    batch_tokens_masked[0, 0, i] = alphabet.mask_idx  # mask out first sequence
+            data = get_all_background_sequences(sequence, mut_df[args.mutation_col], args.offset_idx)
+            for i in tqdm(range(0, len(data), args.mut_chunks), leave=False):
+                batch_labels, batch_strs, batch_tokens = batch_converter(data[i:i+args.mut_chunks])
+                try:
                     with torch.no_grad():
-                        token_probs = torch.log_softmax(
-                            model(batch_tokens_masked.cuda())["logits"], dim=-1
-                        )
-                    all_token_probs.append(token_probs[:, 0, i])  # vocab size
-                token_probs = torch.cat(all_token_probs, dim=0).unsqueeze(0)
-                mut_df[model_location] = mut_df.apply(
-                    lambda row: mut_scan(
-                        row[args.mutation_col], sequence, token_probs, alphabet, args.offset_idx
-                    ),
-                    axis=1,
-                )
+                        if args.nogpu:
+                            token_probs = torch.log_softmax(model(batch_tokens)["logits"], dim=-1)
+                        else:
+                            token_probs = torch.log_softmax(model(batch_tokens.cuda())["logits"], dim=-1)
+                except:
+                    print(f"Could not fit chunk {i} of {gene} into memory")
 
-            else:
-                data = get_all_background_sequences(sequence, mut_df[args.mutation_col], args.offset_idx)
-                batch_labels, batch_strs, batch_tokens = batch_converter(data)
-                with torch.no_grad():
-                    if args.nogpu:
-                        token_probs = torch.log_softmax(model(batch_tokens)["logits"], dim=-1)
-                    else:
-                        token_probs = torch.log_softmax(model(batch_tokens.cuda())["logits"], dim=-1)
-
-                if args.scoring_strategy == "wt-marginals":
-                    for i in range(token_probs.shape[0]):
-                        results =  results.append(
-                            mut_scan(
+                if args.scoring_strategy == "wt-marginals": 
+                    for j in range(token_probs.shape[0]):
+                        res_df = mut_scan(
+                                args,
                                 model_location, 
                                 data[i][0], 
                                 data[i][1], 
-                                token_probs[i, :, :], 
+                                token_probs[j, :, :], 
                                 alphabet, 
                                 args.offset_idx
-                                ).assign(gene=gene)
                             )
+                        results =  pd.concat([
+                            results,
+                            mut_df.merge(
+                                res_df,
+                                left_on=args.mutation_col,
+                                right_on=args.mutation_col,
+                                how="right"
+                            )
+                        ]
+                        )
                 elif args.scoring_strategy == "masked-marginals":
                     all_token_probs = []
                     for i in tqdm(range(batch_tokens.size(1))):
@@ -259,7 +261,7 @@ def main(args):
                         axis=1,
                     )
 
-    results.to_csv(args.output, sep='\t')
+            results.to_csv(outfname(gene), sep='\t')
 
 
 if __name__ == "__main__":
