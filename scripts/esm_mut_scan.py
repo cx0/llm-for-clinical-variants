@@ -181,7 +181,7 @@ def main(args):
     seq_dict = read_fasta(args.seq_input)
     seq_dict = {
         gene: seq for gene, seq in seq_dict.items() 
-        if len(seq) <= 200 and not os.path.exists(outfname(gene))
+        if len(seq) <= 1000 and not os.path.exists(outfname(gene))
     }
 
     # inference for each model
