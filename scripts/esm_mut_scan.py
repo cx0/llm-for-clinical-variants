@@ -84,6 +84,12 @@ def create_parser():
         help="Offset of the mutation positions in `--mutation-col`"
     )
     parser.add_argument(
+        "--max-seq-len",
+        type=int,
+        default=1000,
+        help="max seq length, skip anything above"
+    )
+    parser.add_argument(
         "--mut-chunks",
         type=int,
         default=5,
@@ -181,7 +187,7 @@ def main(args):
     seq_dict = read_fasta(args.seq_input)
     seq_dict = {
         gene: seq for gene, seq in seq_dict.items() 
-        if len(seq) <= 1000 and not os.path.exists(outfname(gene))
+        if len(seq) <= args.max_seq_len and not os.path.exists(outfname(gene))
     }
 
     # inference for each model
