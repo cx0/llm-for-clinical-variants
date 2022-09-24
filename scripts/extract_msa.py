@@ -60,7 +60,7 @@ enst2gene = dict([a.split('\t')[::-1] for a in gene_list.split("\n")])
 # https://hgdownload.soe.ucsc.edu/goldenPath/hg38/multiz100way/alignments/knownGene.multiz100way.exonAA.fa.gz
 # FASTA alignment is provided at the exon level - we need to concatenate. 
 
-fasta_file = open('/Users/onuralp/Desktop/knownGene.multiz100way.exonAA.fa', 'r')
+fasta_file = open('../data/knownGene.multiz100way.exonAA.fa', 'r')
 lines = fasta_file.readlines()
 
 protein2sequence = {}
@@ -82,6 +82,6 @@ for k,v in protein2sequence.items():
     enst_id = k.split('_')[0]
     
     if enst_id in list(enst2gene.keys()):
-        with open('/Users/onuralp/Desktop/' + enst2gene[enst_id]+'.txt', 'a') as f:
+        with open('../data/misc/multiz100way-msa/' + enst2gene[enst_id]+'.txt', 'a') as f:
             f.write(">" + k + "\n" + v + "\n")
 
