@@ -222,7 +222,7 @@ def main(args):
                                 args,
                                 model_location, 
                                 data[i][0], 
-                                data[i][1], 
+                                sequence,
                                 token_probs[j, :, :], 
                                 alphabet, 
                                 args.offset_idx
