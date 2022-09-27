@@ -99,7 +99,7 @@ def create_parser():
         "--scoring-strategy",
         type=str,
         default="wt-marginals",
-        choices=["wt-marginals", "pseudo-ppl", "masked-marginals"],
+        choices=["wt-marginals", "pseudo-ppl", "masked-marginals", "co-masked"],
         help=""
     )
     parser.add_argument(
@@ -123,7 +123,7 @@ def parse_mutation(mut, offset_idx):
     return wt, idx, mt
 
 
-def mut_scan(args, model_name, bgmut, sequence, token_probs, alphabet, offset_idx):
+def mut_scan(args, model_name, bgmut, sequence, wt_token_probs, token_probs, alphabet, offset_idx):
     scores = [
             [
                 model_name,
@@ -131,7 +131,7 @@ def mut_scan(args, model_name, bgmut, sequence, token_probs, alphabet, offset_id
                 token,
                 seq_idx + offset_idx,
                 (token_probs[1 + seq_idx, token_idx] 
-                 - token_probs[1 + seq_idx, alphabet.get_idx(residue)]
+                 - wt_token_probs[1 + seq_idx, alphabet.get_idx(residue)]
                 ).cpu().numpy()
             ]
             for token, token_idx in alphabet.to_dict().items()
@@ -140,6 +140,36 @@ def mut_scan(args, model_name, bgmut, sequence, token_probs, alphabet, offset_id
     return pd.DataFrame(scores, columns=["model", args.mutation_col, "residue", "sequence_idx", "score"])
 
 
+def mut_scan_co_masked(args, bgmuts, batch_tokens, model, model_name, wt_sequence, mut_sequences, alphabet):
+    batch_tokens_masked = batch_tokens.clone()
+    scores = []
+    for i, bgmut in enumerate(bgmuts):
+        wt, mutidx, mt = parse_mutation(bgmut, args.offset_idx)
+        batch_tokens_masked[i, mutidx] = alphabet.mask_idx
+        for coidx in range(len(wt_sequence)):
+            batch_tokens_masked[i, coidx] = alphabet.mask_idx
+            with torch.no_grad():
+                token_probs = torch.log_softmax(model(batch_tokens_masked[i:i+1, :].cuda())["logits"], dim=-1)[0, :, :]
+            mt_coidx_aa = mut_sequences[i][coidx]
+            wt_coidx_aa = wt_sequence[coidx]
+            batch_tokens_masked[i, coidx] = alphabet.get_idx(mt_coidx_aa)
+            scores += [
+                [
+                    model_name,
+                    bgmut,
+                    token,
+                    coidx + args.offset_idx,
+                    (token_probs[1 + coidx, token_idx]
+                    - token_probs[1 + coidx, alphabet.get_idx(mt_coidx_aa)]
+                    - token_probs[1 + coidx, alphabet.get_idx(wt_coidx_aa)]
+                    - token_probs[1 + mutidx, alphabet.get_idx(wt)]
+                    ).cpu().numpy()
+                    
+                ]                
+                for token, token_idx in alphabet.to_dict().items()
+            ]
+    return pd.DataFrame(scores, columns=["model", args.mutation_col, "residue", "sequence_idx", "score"])
+
 
 def get_all_background_sequences(sequence, bg_mutations, offset_idx):
     data = []
@@ -147,34 +177,6 @@ def get_all_background_sequences(sequence, bg_mutations, offset_idx):
         wt, idx, mt = parse_mutation(bgmut, offset_idx)
         data.append( (bgmut, sequence[:idx] + mt + sequence[idx+1:]) )
     return data
-
-
-def compute_pppl(row, sequence, model, alphabet, offset_idx):
-    wt, idx, mt = row[0], int(row[1:-1]) - offset_idx, row[-1]
-
-    # modify the sequence
-    sequence = sequence[:idx] + mt + sequence[(idx + 1) :]
-
-    # encode the sequence
-    data = [
-        ("protein1", sequence),
-    ]
-
-    batch_converter = alphabet.get_batch_converter()
-
-    batch_labels, batch_strs, batch_tokens = batch_converter(data)
-
-    wt_encoded, mt_encoded = alphabet.get_idx(wt), alphabet.get_idx(mt)
-
-    # compute probabilities at each position
-    log_probs = []
-    for i in range(1, len(sequence) - 1):
-        batch_tokens_masked = batch_tokens.clone()
-        batch_tokens_masked[0, i] = alphabet.mask_idx
-        with torch.no_grad():
-            token_probs = torch.log_softmax(model(batch_tokens_masked.cuda())["logits"], dim=-1)
-        log_probs.append(token_probs[0, i, alphabet.get_idx(sequence[i])].item())  # vocab size
-    return sum(log_probs)
 
 
 def outfname(gene):
@@ -205,6 +207,13 @@ def main(args):
             batch_converter = alphabet.get_batch_converter()
 
             data = get_all_background_sequences(sequence, mut_df[args.mutation_col], args.offset_idx)
+            _, _, wt_tokens = batch_converter([('wt', sequence)])
+            with torch.no_grad():
+                if args.nogpu:
+                    wt_token_probs = torch.log_softmax(model(wt_tokens)["logits"], dim=-1)
+                else:
+                    wt_token_probs = torch.log_softmax(model(wt_tokens.cuda())["logits"], dim=-1)
+                wt_token_probs = wt_token_probs[0, :, :]
             for i in tqdm(range(0, len(data), args.mut_chunks), leave=False):
                 batch_labels, batch_strs, batch_tokens = batch_converter(data[i:i+args.mut_chunks])
                 try:
@@ -221,8 +230,9 @@ def main(args):
                         res_df = mut_scan(
                                 args,
                                 model_location, 
-                                data[i][0], 
+                                data[i+j][0], 
                                 sequence,
+                                token_probs[j, :, :], 
                                 token_probs[j, :, :], 
                                 alphabet, 
                                 args.offset_idx
@@ -237,36 +247,61 @@ def main(args):
                             )
                         ]
                         )
+                elif args.scoring_strategy == "co-masked":
+                    res_df = mut_scan_co_masked(
+                        args, 
+                        [d[0] for d in data[i:i+args.mut_chunks]], 
+                        batch_tokens,
+                        model, 
+                        model_location, 
+                        sequence, 
+                        [d[1] for d in data[i:i+args.mut_chunks]], 
+                        alphabet
+                        )
+                    results =  pd.concat([
+                            results,
+                            mut_df.merge(
+                                res_df,
+                                left_on=args.mutation_col,
+                                right_on=args.mutation_col,
+                                how="right"
+                            )
+                        ]
+                    )
                 elif args.scoring_strategy == "masked-marginals":
                     all_token_probs = []
-                    for i in tqdm(range(batch_tokens.size(1))):
+                    for j in tqdm(range(batch_tokens.size(1)), leave=False):
                         batch_tokens_masked = batch_tokens.clone()
-                        batch_tokens_masked[0, i] = alphabet.mask_idx
+                        batch_tokens_masked[:, j] = alphabet.mask_idx
                         with torch.no_grad():
                             token_probs = torch.log_softmax(
                                 model(batch_tokens_masked.cuda())["logits"], dim=-1
                             )
-                        all_token_probs.append(token_probs[:, i])  # vocab size
-                    token_probs = torch.cat(all_token_probs, dim=0).unsqueeze(0)
-                    mut_df[model_location] = mut_df.apply(
-                        lambda row: mut_scan(
-                            row[args.mutation_col],
-                            sequence,
-                            token_probs,
-                            alphabet,
-                            args.offset_idx,
-                        ),
-                        axis=1,
+                        all_token_probs.append(token_probs[:, j])  # vocab size
+                    token_probs = torch.cat(all_token_probs, dim=0).reshape(
+                        [batch_tokens.shape[0], batch_tokens.shape[1], -1]
                     )
-                elif args.scoring_strategy == "pseudo-ppl":
-                    tqdm.pandas()
-                    mut_df[model_location] = mut_df.progress_apply(
-                        lambda row: compute_pppl(
-                            row[args.mutation_col], sequence, model, alphabet, args.offset_idx
-                        ),
-                        axis=1,
-                    )
-
+                    for j in range(token_probs.shape[0]):
+                        res_df = mut_scan(
+                                args,
+                                model_location, 
+                                data[i+j][0], 
+                                sequence,
+                                token_probs[j, :, :], 
+                                token_probs[j, :, :], 
+                                alphabet, 
+                                args.offset_idx
+                            )
+                        results =  pd.concat([
+                            results,
+                            mut_df.merge(
+                                res_df,
+                                left_on=args.mutation_col,
+                                right_on=args.mutation_col,
+                                how="right"
+                            )
+                        ]
+                        )
             results.to_csv(outfname(gene), sep='\t')
 
 
