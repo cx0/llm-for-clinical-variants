@@ -1,0 +1,904 @@
+gene_symbol	cds_change	aa_change	clinical_significance
+VHL	250G>T	Val84Leu	Pathogenic
+VHL	250G>C	Val84Leu	Pathogenic
+KCNQ1	919G>C	Val307Leu	Pathogenic
+KCNQ1	919G>T	Val307Leu	Uncertain significance
+WT1	1338C>G	His446Gln	Pathogenic
+WT1	1338C>A	His446Gln	Conflicting interpretations of pathogenicity
+LDLR	681C>G	Asp227Glu	Pathogenic/Likely pathogenic
+LDLR	681C>A	Asp227Glu	Pathogenic/Likely pathogenic
+GAA	877G>A	Gly293Arg	Pathogenic
+GAA	877G>C	Gly293Arg	Likely pathogenic
+SDHD	3G>C	Met1Ile	Pathogenic
+SDHD	3G>A	Met1Ile	Pathogenic
+STK11	717G>C	Trp239Cys	Pathogenic
+STK11	717G>T	Trp239Cys	Likely pathogenic
+STK11	1062C>G	Phe354Leu	Benign/Likely benign
+STK11	1060T>C	Phe354Leu	Likely benign
+PTEN	510T>A	Ser170Arg	Likely pathogenic
+PTEN	508A>C	Ser170Arg	Pathogenic
+PTEN	510T>G	Ser170Arg	Pathogenic
+ACVRL1	150G>T	Trp50Cys	Pathogenic
+ACVRL1	150G>C	Trp50Cys	Pathogenic
+GLA	982G>A	Gly328Arg	Pathogenic
+GLA	982G>C	Gly328Arg	Pathogenic/Likely pathogenic
+GLA	1081G>C	Gly361Arg	Pathogenic
+GLA	1081G>A	Gly361Arg	Pathogenic
+GLA	888G>A	Met296Ile	Pathogenic
+GLA	888G>T	Met296Ile	Pathogenic
+OTC	484G>A	Gly162Arg	Pathogenic
+OTC	484G>C	Gly162Arg	Pathogenic
+OTC	444G>C	Leu148Phe	Pathogenic
+OTC	444G>T	Leu148Phe	Pathogenic
+TP53	747G>T	Arg249Ser	Conflicting interpretations of pathogenicity
+TP53	747G>C	Arg249Ser	Uncertain significance
+TP53	814G>T	Val272Leu	Conflicting interpretations of pathogenicity
+TP53	814G>C	Val272Leu	Likely pathogenic
+TP53	105G>T	Leu35Phe	Pathogenic
+TP53	105G>C	Leu35Phe	Likely benign
+TTR	210T>G	Ser70Arg	Pathogenic
+TTR	208A>C	Ser70Arg	Likely pathogenic
+TTR	210T>A	Ser70Arg	Pathogenic
+TTR	199G>C	Gly67Arg	Pathogenic
+TTR	199G>A	Gly67Arg	Pathogenic
+TTR	250T>C	Phe84Leu	Pathogenic
+TTR	252T>G	Phe84Leu	Pathogenic/Likely pathogenic
+MEN1	1306T>A	Trp436Arg	Pathogenic
+MEN1	1306T>C	Trp436Arg	Pathogenic
+ACTC1	67T>C	Phe23Leu	Conflicting interpretations of pathogenicity
+ACTC1	69T>A	Phe23Leu	Uncertain significance
+ACTC1	69T>G	Phe23Leu	Uncertain significance
+MEN1	417C>G	His139Gln	Likely pathogenic
+MEN1	417C>A	His139Gln	Uncertain significance
+TGFBR2	1152T>A	Asn384Lys	Uncertain significance
+TGFBR2	1152T>G	Asn384Lys	Likely pathogenic
+PMS2	1789A>T	Thr597Ser	Benign
+PMS2	1790C>G	Thr597Ser	Likely benign
+MUTYH	930G>C	Gln310His	Benign
+MUTYH	930G>T	Gln310His	Conflicting interpretations of pathogenicity
+TNNI3	579G>C	Lys193Asn	Uncertain significance
+TNNI3	579G>T	Lys193Asn	Likely pathogenic
+MYL2	31G>A	Gly11Arg	Uncertain significance
+MYL2	31G>C	Gly11Arg	Uncertain significance
+TNNT2	294T>G	Asp98Glu	Likely pathogenic
+TNNT2	294T>A	Asp98Glu	Likely pathogenic
+TNNT2	682G>T	Val228Leu	Uncertain significance
+TNNT2	682G>C	Val228Leu	Uncertain significance
+PKP2	516C>A	Ser172Arg	Uncertain significance
+PKP2	514A>C	Ser172Arg	Uncertain significance
+LMNA	1567G>A	Gly523Arg	Conflicting interpretations of pathogenicity
+LMNA	1567G>C	Gly523Arg	Uncertain significance
+KCNQ1	1033G>C	Gly345Arg	Pathogenic
+KCNQ1	1033G>A	Gly345Arg	Pathogenic
+KCNQ1	1101G>T	Gln367His	Uncertain significance
+KCNQ1	1101G>C	Gln367His	Uncertain significance
+KCNQ1	1702G>A	Gly568Arg	Pathogenic/Likely pathogenic
+KCNQ1	1702G>C	Gly568Arg	Likely pathogenic
+KCNQ1	502G>A	Gly168Arg	Pathogenic
+KCNQ1	502G>C	Gly168Arg	Pathogenic
+KCNQ1	973G>A	Gly325Arg	Pathogenic
+KCNQ1	973G>C	Gly325Arg	Pathogenic
+DES	735G>C	Glu245Asp	Pathogenic/Likely pathogenic
+DES	735G>T	Glu245Asp	Likely pathogenic
+LMNA	1368C>A	Asn456Lys	Pathogenic
+LMNA	1368C>G	Asn456Lys	Likely pathogenic
+LMNA	1399T>C	Trp467Arg	Likely pathogenic
+LMNA	1399T>A	Trp467Arg	Likely pathogenic
+LMNA	618C>G	Phe206Leu	Conflicting interpretations of pathogenicity
+LMNA	618C>A	Phe206Leu	Likely pathogenic
+LMNA	694G>C	Gly232Arg	Likely pathogenic
+LMNA	694G>A	Gly232Arg	Conflicting interpretations of pathogenicity
+LMNA	99G>C	Glu33Asp	Likely pathogenic
+LMNA	99G>T	Glu33Asp	Uncertain significance
+KCNQ1	1338C>G	Asp446Glu	Conflicting interpretations of pathogenicity
+KCNQ1	1338C>A	Asp446Glu	Likely benign
+TP53	400T>C	Phe134Leu	Uncertain significance
+TP53	402T>A	Phe134Leu	Conflicting interpretations of pathogenicity
+TP53	402T>G	Phe134Leu	Uncertain significance
+MLH1	1038G>C	Gln346His	Pathogenic
+MLH1	1038G>T	Gln346His	Pathogenic
+MLH1	114C>G	Asn38Lys	Pathogenic
+MLH1	114C>A	Asn38Lys	Likely pathogenic
+MLH1	1989G>T	Glu663Asp	Pathogenic
+MLH1	1989G>C	Glu663Asp	Pathogenic
+MLH1	199G>A	Gly67Arg	Pathogenic
+MLH1	199G>C	Gly67Arg	Pathogenic
+MLH1	2103G>C	Gln701His	Pathogenic
+MLH1	2103G>T	Gln701His	Uncertain significance
+MLH1	306G>C	Glu102Asp	Pathogenic
+MLH1	306G>T	Glu102Asp	Uncertain significance
+MLH1	3G>A	Met1Ile	Pathogenic
+MLH1	3G>T	Met1Ile	Likely pathogenic
+MLH1	637G>T	Val213Leu	Uncertain significance
+MLH1	637G>C	Val213Leu	Uncertain significance
+MSH2	1012G>A	Gly338Arg	Pathogenic
+MSH2	1012G>C	Gly338Arg	Pathogenic/Likely pathogenic
+MSH2	114C>G	Asp38Glu	Conflicting interpretations of pathogenicity
+MSH2	114C>A	Asp38Glu	Uncertain significance
+MSH2	1660A>C	Ser554Arg	Uncertain significance
+MSH2	1662C>G	Ser554Arg	Uncertain significance
+MSH2	1A>C	Met1Leu	Uncertain significance
+MSH2	1A>T	Met1Leu	Uncertain significance
+MSH2	2074G>C	Gly692Arg	Likely pathogenic
+MSH2	2074G>A	Gly692Arg	Pathogenic/Likely pathogenic
+MSH2	2251G>A	Gly751Arg	Pathogenic
+MSH2	2251G>C	Gly751Arg	Likely pathogenic
+GLA	132G>C	Trp44Cys	Uncertain significance
+GLA	132G>T	Trp44Cys	Uncertain significance
+GLA	966C>G	Asp322Glu	Pathogenic
+GLA	966C>A	Asp322Glu	Pathogenic
+PTEN	1026G>C	Lys342Asn	Uncertain significance
+PTEN	1026G>T	Lys342Asn	Likely pathogenic
+OTC	618G>C	Met206Ile	Pathogenic
+OTC	618G>A	Met206Ile	Pathogenic
+TMEM127	3G>T	Met1Ile	Pathogenic
+TMEM127	3G>A	Met1Ile	Pathogenic
+MLH1	1344G>T	Glu448Asp	Uncertain significance
+MLH1	1344G>C	Glu448Asp	Uncertain significance
+MLH1	1572G>C	Met524Ile	Uncertain significance
+MLH1	1572G>T	Met524Ile	Uncertain significance
+MLH1	1572G>A	Met524Ile	Uncertain significance
+MSH2	1122G>C	Gln374His	Uncertain significance
+MSH2	1122G>T	Gln374His	Uncertain significance
+STK11	894C>A	Phe298Leu	Conflicting interpretations of pathogenicity
+STK11	894C>G	Phe298Leu	Conflicting interpretations of pathogenicity
+PMS2	1233A>T	Glu411Asp	Uncertain significance
+PMS2	1233A>C	Glu411Asp	Uncertain significance
+MUTYH	1486A>T	Met496Leu	Uncertain significance
+MUTYH	1486A>C	Met496Leu	Uncertain significance
+SDHD	255G>T	Leu85Phe	Conflicting interpretations of pathogenicity
+SDHD	255G>C	Leu85Phe	Conflicting interpretations of pathogenicity
+VHL	3G>A	Met1Ile	Uncertain significance
+VHL	3G>T	Met1Ile	Uncertain significance
+VHL	3G>C	Met1Ile	Uncertain significance
+MSH2	1986G>C	Gln662His	Uncertain significance
+MSH2	1986G>T	Gln662His	Uncertain significance
+MSH2	631G>A	Gly211Arg	Uncertain significance
+MSH2	631G>C	Gly211Arg	Uncertain significance
+TP53	21T>A	Asp7Glu	Likely benign
+TP53	21T>G	Asp7Glu	Likely benign
+PMS2	1438G>C	Gly480Arg	Uncertain significance
+PMS2	1438G>A	Gly480Arg	Conflicting interpretations of pathogenicity
+BMPR1A	1420G>C	Val474Leu	Uncertain significance
+BMPR1A	1420G>T	Val474Leu	Uncertain significance
+MLH1	1549G>C	Gly517Arg	Uncertain significance
+MLH1	1549G>A	Gly517Arg	Uncertain significance
+MSH2	2439G>A	Met813Ile	Conflicting interpretations of pathogenicity
+MSH2	2439G>C	Met813Ile	Uncertain significance
+MSH2	2439G>T	Met813Ile	Uncertain significance
+PMS2	106A>C	Ser36Arg	Uncertain significance
+PMS2	108C>A	Ser36Arg	Uncertain significance
+MUTYH	882C>G	Ser294Arg	Uncertain significance
+MUTYH	882C>A	Ser294Arg	Uncertain significance
+MUTYH	367G>A	Gly123Arg	Conflicting interpretations of pathogenicity
+MUTYH	367G>C	Gly123Arg	Uncertain significance
+MSH2	297A>T	Arg99Ser	Uncertain significance
+MSH2	297A>C	Arg99Ser	Uncertain significance
+MSH2	1530G>T	Gln510His	Uncertain significance
+MSH2	1530G>C	Gln510His	Conflicting interpretations of pathogenicity
+MSH2	1053G>C	Met351Ile	Uncertain significance
+MSH2	1053G>T	Met351Ile	Uncertain significance
+MSH2	2178G>C	Met726Ile	Uncertain significance
+MSH2	2178G>A	Met726Ile	Uncertain significance
+MSH2	2178G>T	Met726Ile	Uncertain significance
+MSH2	900G>A	Met300Ile	Uncertain significance
+MSH2	900G>T	Met300Ile	Uncertain significance
+TP53	711G>A	Met237Ile	Pathogenic
+TP53	711G>T	Met237Ile	Likely pathogenic
+PMS2	1A>T	Met1Leu	Pathogenic
+PMS2	1A>C	Met1Leu	Pathogenic
+MLH1	1878C>A	Phe626Leu	Uncertain significance
+MLH1	1876T>C	Phe626Leu	Uncertain significance
+MLH1	1878C>G	Phe626Leu	Uncertain significance
+MSH2	66C>G	Phe22Leu	Uncertain significance
+MSH2	64T>C	Phe22Leu	Uncertain significance
+MSH2	228G>T	Gln76His	Uncertain significance
+MSH2	228G>C	Gln76His	Uncertain significance
+LDLR	2475C>G	Asn825Lys	Pathogenic/Likely pathogenic
+LDLR	2475C>A	Asn825Lys	Pathogenic/Likely pathogenic
+LMNA	234G>C	Lys78Asn	Uncertain significance
+LMNA	234G>T	Lys78Asn	Likely pathogenic
+TNNT2	360T>G	Phe120Leu	Pathogenic/Likely pathogenic
+TNNT2	358T>C	Phe120Leu	Pathogenic/Likely pathogenic
+MYL3	466G>T	Val156Leu	Conflicting interpretations of pathogenicity
+MYL3	466G>C	Val156Leu	Uncertain significance
+TPM1	762T>G	Asp254Glu	Uncertain significance
+TPM1	762T>A	Asp254Glu	Uncertain significance
+TNNT2	883G>A	Gly295Arg	Uncertain significance
+TNNT2	883G>C	Gly295Arg	Uncertain significance
+MYL3	447G>A	Met149Ile	Likely pathogenic
+MYL3	447G>T	Met149Ile	Likely pathogenic
+TNNC1	469A>T	Met157Leu	Uncertain significance
+TNNC1	469A>C	Met157Leu	Uncertain significance
+MSH2	126C>G	Phe42Leu	Uncertain significance
+MSH2	124T>C	Phe42Leu	Uncertain significance
+MSH2	1617T>A	Phe539Leu	Uncertain significance
+MSH2	1615T>C	Phe539Leu	Uncertain significance
+MSH2	2043A>T	Gln681His	Uncertain significance
+MSH2	2043A>C	Gln681His	Uncertain significance
+TP53	1000G>C	Gly334Arg	Uncertain significance
+TP53	1000G>A	Gly334Arg	Uncertain significance
+TP53	370T>A	Cys124Ser	Uncertain significance
+TP53	371G>C	Cys124Ser	Uncertain significance
+STK11	151A>C	Met51Leu	Uncertain significance
+STK11	151A>T	Met51Leu	Uncertain significance
+STK11	1252T>A	Cys418Ser	Uncertain significance
+STK11	1253G>C	Cys418Ser	Uncertain significance
+LDLR	846C>A	Phe282Leu	Conflicting interpretations of pathogenicity
+LDLR	844T>C	Phe282Leu	Uncertain significance
+MUTYH	901G>T	Val301Leu	Uncertain significance
+MUTYH	901G>C	Val301Leu	Uncertain significance
+MUTYH	640G>T	Val214Leu	Uncertain significance
+MUTYH	640G>C	Val214Leu	Uncertain significance
+MUTYH	84C>A	Asn28Lys	Uncertain significance
+MUTYH	84C>G	Asn28Lys	Uncertain significance
+MLH1	9C>G	Phe3Leu	Conflicting interpretations of pathogenicity
+MLH1	7T>C	Phe3Leu	Conflicting interpretations of pathogenicity
+PMS2	1717A>T	Thr573Ser	Conflicting interpretations of pathogenicity
+PMS2	1718C>G	Thr573Ser	Likely benign
+PMS2	1632C>A	Asp544Glu	Uncertain significance
+PMS2	1632C>G	Asp544Glu	Uncertain significance
+PMS2	1342G>C	Gly448Arg	Likely benign
+PMS2	1342G>A	Gly448Arg	Uncertain significance
+PMS2	619G>A	Gly207Arg	Uncertain significance
+PMS2	619G>C	Gly207Arg	Uncertain significance
+BMPR1A	393C>G	Asn131Lys	Uncertain significance
+BMPR1A	393C>A	Asn131Lys	Uncertain significance
+TP53	736A>C	Met246Leu	Likely pathogenic
+TP53	736A>T	Met246Leu	Uncertain significance
+TP53	408A>C	Gln136His	Uncertain significance
+TP53	408A>T	Gln136His	Uncertain significance
+STK11	582C>A	Asp194Glu	Likely pathogenic
+STK11	582C>G	Asp194Glu	Likely pathogenic
+STK11	990C>G	Asp330Glu	Uncertain significance
+STK11	990C>A	Asp330Glu	Uncertain significance
+STK11	1108G>A	Gly370Arg	Uncertain significance
+STK11	1108G>C	Gly370Arg	Uncertain significance
+MSH2	174C>A	Phe58Leu	Conflicting interpretations of pathogenicity
+MSH2	174C>G	Phe58Leu	Conflicting interpretations of pathogenicity
+MSH2	172T>C	Phe58Leu	Likely benign
+MSH2	1670C>G	Thr557Ser	Conflicting interpretations of pathogenicity
+MSH2	1669A>T	Thr557Ser	Uncertain significance
+PTEN	106G>C	Gly36Arg	Conflicting interpretations of pathogenicity
+PTEN	106G>A	Gly36Arg	Conflicting interpretations of pathogenicity
+PTEN	385G>A	Gly129Arg	Pathogenic/Likely pathogenic
+PTEN	385G>C	Gly129Arg	Pathogenic
+LMNA	3G>T	Met1Ile	Pathogenic/Likely pathogenic
+LMNA	3G>C	Met1Ile	Pathogenic
+LMNA	3G>A	Met1Ile	Pathogenic
+DSC2	34G>A	Gly12Arg	Benign/Likely benign
+DSC2	34G>C	Gly12Arg	Conflicting interpretations of pathogenicity
+SMAD3	733G>A	Gly245Arg	Conflicting interpretations of pathogenicity
+SMAD3	733G>C	Gly245Arg	Conflicting interpretations of pathogenicity
+MSH2	2379G>T	Gln793His	Uncertain significance
+MSH2	2379G>C	Gln793His	Uncertain significance
+MLH1	90T>G	Asn30Lys	Uncertain significance
+MLH1	90T>A	Asn30Lys	Uncertain significance
+MLH1	1935C>G	Asn645Lys	Uncertain significance
+MLH1	1935C>A	Asn645Lys	Uncertain significance
+PMS2	240C>G	Phe80Leu	Uncertain significance
+PMS2	240C>A	Phe80Leu	Uncertain significance
+TP53	904G>C	Gly302Arg	Uncertain significance
+TP53	904G>A	Gly302Arg	Uncertain significance
+TP53	589G>T	Val197Leu	Uncertain significance
+TP53	589G>C	Val197Leu	Uncertain significance
+MSH2	95C>G	Thr32Ser	Uncertain significance
+MSH2	94A>T	Thr32Ser	Uncertain significance
+DSC2	2664G>T	Glu888Asp	Uncertain significance
+DSC2	2664G>C	Glu888Asp	Uncertain significance
+MSH2	735G>C	Leu245Phe	Uncertain significance
+MSH2	735G>T	Leu245Phe	Uncertain significance
+MLH1	111G>T	Glu37Asp	Uncertain significance
+MLH1	111G>C	Glu37Asp	Uncertain significance
+TNNC1	189G>T	Glu63Asp	Uncertain significance
+TNNC1	189G>C	Glu63Asp	Uncertain significance
+PMS2	1225G>C	Gly409Arg	Conflicting interpretations of pathogenicity
+PMS2	1225G>A	Gly409Arg	Uncertain significance
+STK11	312G>C	Arg104Ser	Uncertain significance
+STK11	312G>T	Arg104Ser	Uncertain significance
+GLA	870G>C	Met290Ile	Conflicting interpretations of pathogenicity
+GLA	870G>A	Met290Ile	Likely pathogenic
+GLA	153G>T	Met51Ile	Likely pathogenic
+GLA	153G>A	Met51Ile	Pathogenic/Likely pathogenic
+LMNA	378C>G	Asp126Glu	Uncertain significance
+LMNA	378C>A	Asp126Glu	Uncertain significance
+VHL	264G>T	Trp88Cys	Pathogenic/Likely pathogenic
+VHL	264G>C	Trp88Cys	Pathogenic
+BMPR1A	3G>C	Met1Ile	Pathogenic
+BMPR1A	3G>A	Met1Ile	Pathogenic
+BMPR1A	3G>T	Met1Ile	Likely pathogenic
+LDLR	417C>G	Asp139Glu	Likely pathogenic
+LDLR	417C>A	Asp139Glu	Pathogenic
+LDLR	1285G>C	Val429Leu	Pathogenic/Likely pathogenic
+LDLR	1285G>T	Val429Leu	Likely pathogenic
+LDLR	1860G>T	Trp620Cys	Conflicting interpretations of pathogenicity
+LDLR	1860G>C	Trp620Cys	Likely pathogenic
+TNNT2	573G>T	Met191Ile	Uncertain significance
+TNNT2	573G>A	Met191Ile	Uncertain significance
+TRDN	1257C>A	Asp419Glu	Benign
+TRDN	1257C>G	Asp419Glu	Uncertain significance
+MLH1	1146G>C	Gln382His	Uncertain significance
+MLH1	1146G>T	Gln382His	Uncertain significance
+PMS2	847A>C	Ser283Arg	Uncertain significance
+PMS2	849T>A	Ser283Arg	Uncertain significance
+PMS2	799T>C	Phe267Leu	Uncertain significance
+PMS2	801T>G	Phe267Leu	Uncertain significance
+PMS2	801T>A	Phe267Leu	Uncertain significance
+STK11	463G>A	Gly155Arg	Uncertain significance
+STK11	463G>C	Gly155Arg	Uncertain significance
+MUTYH	877G>A	Gly293Arg	Conflicting interpretations of pathogenicity
+MUTYH	877G>C	Gly293Arg	Uncertain significance
+MUTYH	253T>A	Trp85Arg	Uncertain significance
+MUTYH	253T>C	Trp85Arg	Uncertain significance
+MSH2	183G>T	Gln61His	Conflicting interpretations of pathogenicity
+MSH2	183G>C	Gln61His	Uncertain significance
+MSH2	617C>G	Thr206Ser	Uncertain significance
+MSH2	616A>T	Thr206Ser	Uncertain significance
+MSH2	681A>C	Arg227Ser	Uncertain significance
+MSH2	681A>T	Arg227Ser	Uncertain significance
+MSH2	756G>C	Gln252His	Uncertain significance
+MSH2	756G>T	Gln252His	Uncertain significance
+MSH2	888C>G	Phe296Leu	Conflicting interpretations of pathogenicity
+MSH2	886T>C	Phe296Leu	Uncertain significance
+MSH2	1653T>A	Phe551Leu	Uncertain significance
+MSH2	1651T>C	Phe551Leu	Uncertain significance
+MSH2	2386A>T	Thr796Ser	Uncertain significance
+MSH2	2387C>G	Thr796Ser	Uncertain significance
+MLH1	242C>G	Thr81Ser	Uncertain significance
+MLH1	241A>T	Thr81Ser	Uncertain significance
+PMS2	615G>T	Gln205His	Uncertain significance
+PMS2	615G>C	Gln205His	Uncertain significance
+PMS2	475G>T	Val159Leu	Uncertain significance
+PMS2	475G>C	Val159Leu	Uncertain significance
+BMPR1A	1260C>A	Asn420Lys	Uncertain significance
+BMPR1A	1260C>G	Asn420Lys	Uncertain significance
+PTEN	144C>G	Asn48Lys	Likely pathogenic
+PTEN	144C>A	Asn48Lys	Pathogenic/Likely pathogenic
+TP53	930C>A	Asn310Lys	Uncertain significance
+TP53	930C>G	Asn310Lys	Uncertain significance
+TP53	877G>A	Gly293Arg	Uncertain significance
+TP53	877G>C	Gly293Arg	Uncertain significance
+SDHB	39G>T	Leu13Phe	Uncertain significance
+SDHB	39G>C	Leu13Phe	Uncertain significance
+MSH2	961A>T	Thr321Ser	Uncertain significance
+MSH2	962C>G	Thr321Ser	Uncertain significance
+PMS2	972C>A	Asn324Lys	Uncertain significance
+PMS2	972C>G	Asn324Lys	Uncertain significance
+ACTA2	138G>A	Met46Ile	Uncertain significance
+ACTA2	138G>T	Met46Ile	Conflicting interpretations of pathogenicity
+WT1	216G>T	Gln72His	Benign/Likely benign
+WT1	216G>C	Gln72His	Uncertain significance
+RB1	2518G>A	Gly840Arg	Conflicting interpretations of pathogenicity
+RB1	2518G>C	Gly840Arg	Uncertain significance
+LMNA	1158G>C	Arg386Ser	Uncertain significance
+LMNA	1158G>T	Arg386Ser	Uncertain significance
+MSH2	1276G>A	Gly426Arg	Conflicting interpretations of pathogenicity
+MSH2	1276G>C	Gly426Arg	Likely pathogenic
+LDLR	1A>C	Met1Leu	Pathogenic
+LDLR	1A>T	Met1Leu	Pathogenic
+LDLR	3G>T	Met1Ile	Likely pathogenic
+LDLR	3G>A	Met1Ile	Likely pathogenic
+LDLR	4G>A	Gly2Arg	Uncertain significance
+LDLR	4G>C	Gly2Arg	Conflicting interpretations of pathogenicity
+LDLR	28T>A	Trp10Arg	Likely pathogenic
+LDLR	28T>C	Trp10Arg	Pathogenic/Likely pathogenic
+LDLR	147C>A	Ser49Arg	Likely benign
+LDLR	145A>C	Ser49Arg	Uncertain significance
+LDLR	361T>A	Cys121Ser	Likely pathogenic
+LDLR	362G>C	Cys121Ser	Likely pathogenic
+LDLR	376T>C	Phe126Leu	Likely pathogenic
+LDLR	378C>A	Phe126Leu	Pathogenic
+LDLR	420G>C	Glu140Asp	Pathogenic/Likely pathogenic
+LDLR	420G>T	Glu140Asp	Pathogenic/Likely pathogenic
+LDLR	618T>G	Ser206Arg	Pathogenic/Likely pathogenic
+LDLR	616A>C	Ser206Arg	Uncertain significance
+LDLR	618T>A	Ser206Arg	Pathogenic
+LDLR	768C>G	Asp256Glu	Likely pathogenic
+LDLR	768C>A	Asp256Glu	Conflicting interpretations of pathogenicity
+LDLR	850T>A	Cys284Ser	Uncertain significance
+LDLR	851G>C	Cys284Ser	Uncertain significance
+LDLR	915G>C	Trp305Cys	Likely pathogenic
+LDLR	915G>T	Trp305Cys	Uncertain significance
+LDLR	1012T>A	Cys338Ser	Pathogenic/Likely pathogenic
+LDLR	1013G>C	Cys338Ser	Pathogenic
+LDLR	1179G>C	Lys393Asn	Likely pathogenic
+LDLR	1179G>T	Lys393Asn	Uncertain significance
+LDLR	1207T>C	Phe403Leu	Likely pathogenic
+LDLR	1209C>A	Phe403Leu	Pathogenic
+LDLR	1230G>C	Arg410Ser	Conflicting interpretations of pathogenicity
+LDLR	1230G>T	Arg410Ser	Likely pathogenic
+LDLR	1329G>C	Trp443Cys	Pathogenic/Likely pathogenic
+LDLR	1329G>T	Trp443Cys	Pathogenic/Likely pathogenic
+LDLR	1335C>A	Asp445Glu	Conflicting interpretations of pathogenicity
+LDLR	1335C>G	Asp445Glu	Uncertain significance
+LDLR	1449G>T	Trp483Cys	Uncertain significance
+LDLR	1449G>C	Trp483Cys	Pathogenic
+LDLR	1567G>T	Val523Leu	Conflicting interpretations of pathogenicity
+LDLR	1567G>C	Val523Leu	Uncertain significance
+LDLR	1633G>A	Gly545Arg	Pathogenic/Likely pathogenic
+LDLR	1633G>C	Gly545Arg	Likely pathogenic
+LDLR	1644T>A	Asn548Lys	Likely pathogenic
+LDLR	1644T>G	Asn548Lys	Likely pathogenic
+LDLR	1731G>T	Trp577Cys	Conflicting interpretations of pathogenicity
+LDLR	1731G>C	Trp577Cys	Pathogenic/Likely pathogenic
+LDLR	1749C>A	His583Gln	Likely pathogenic
+LDLR	1749C>G	His583Gln	Likely pathogenic
+LDLR	1833G>C	Leu611Phe	Pathogenic/Likely pathogenic
+LDLR	1833G>T	Leu611Phe	Likely pathogenic
+LDLR	2041T>A	Cys681Ser	Conflicting interpretations of pathogenicity
+LDLR	2042G>C	Cys681Ser	Pathogenic/Likely pathogenic
+LDLR	2131T>A	Cys711Ser	Likely pathogenic
+LDLR	2132G>C	Cys711Ser	Likely pathogenic
+LDLR	2389G>T	Val797Leu	Conflicting interpretations of pathogenicity
+LDLR	2389G>C	Val797Leu	Uncertain significance
+LDLR	2413G>A	Gly805Arg	Likely pathogenic
+LDLR	2413G>C	Gly805Arg	Pathogenic
+GAA	1320G>T	Met440Ile	Uncertain significance
+GAA	1320G>C	Met440Ile	Uncertain significance
+TMEM127	299G>C	Cys100Ser	Uncertain significance
+TMEM127	298T>A	Cys100Ser	Uncertain significance
+PMS2	1359G>A	Met453Ile	Uncertain significance
+PMS2	1359G>T	Met453Ile	Uncertain significance
+WT1	162C>G	Ser54Arg	Uncertain significance
+WT1	162C>A	Ser54Arg	Uncertain significance
+RB1	393C>G	Phe131Leu	Uncertain significance
+RB1	393C>A	Phe131Leu	Uncertain significance
+LDLR	428G>C	Cys143Ser	Pathogenic/Likely pathogenic
+LDLR	427T>A	Cys143Ser	Likely pathogenic
+LDLR	672C>A	Asp224Glu	Conflicting interpretations of pathogenicity
+LDLR	672C>G	Asp224Glu	Uncertain significance
+PTEN	477G>T	Arg159Ser	Likely pathogenic
+PTEN	477G>C	Arg159Ser	Uncertain significance
+TP53	713G>C	Cys238Ser	Pathogenic/Likely pathogenic
+TP53	712T>A	Cys238Ser	Pathogenic
+TP53	724T>A	Cys242Ser	Conflicting interpretations of pathogenicity
+TP53	725G>C	Cys242Ser	Uncertain significance
+TP53	824G>C	Cys275Ser	Conflicting interpretations of pathogenicity
+TP53	823T>A	Cys275Ser	Uncertain significance
+TP53	843C>G	Asp281Glu	Uncertain significance
+TP53	843C>A	Asp281Glu	Conflicting interpretations of pathogenicity
+TP53	810T>G	Phe270Leu	Likely pathogenic
+TP53	808T>C	Phe270Leu	Uncertain significance
+TP53	810T>A	Phe270Leu	Uncertain significance
+TP53	796G>C	Gly266Arg	Pathogenic
+TP53	796G>A	Gly266Arg	Pathogenic
+TP53	537T>G	His179Gln	Pathogenic/Likely pathogenic
+TP53	537T>A	His179Gln	Pathogenic
+TP53	396G>C	Lys132Asn	Likely pathogenic
+TP53	396G>T	Lys132Asn	Conflicting interpretations of pathogenicity
+TP53	645T>G	Ser215Arg	Uncertain significance
+TP53	643A>C	Ser215Arg	Uncertain significance
+TP53	646G>T	Val216Leu	Uncertain significance
+TP53	646G>C	Val216Leu	Conflicting interpretations of pathogenicity
+SMAD3	814G>C	Gly272Arg	Uncertain significance
+SMAD3	814G>A	Gly272Arg	Uncertain significance
+STK11	711C>G	Asp237Glu	Likely pathogenic
+STK11	711C>A	Asp237Glu	Likely pathogenic
+LDLR	300C>A	Asp100Glu	Conflicting interpretations of pathogenicity
+LDLR	300C>G	Asp100Glu	Pathogenic
+MUTYH	375G>T	Met125Ile	Uncertain significance
+MUTYH	375G>A	Met125Ile	Uncertain significance
+MSH2	2281G>A	Gly761Arg	Uncertain significance
+MSH2	2281G>C	Gly761Arg	Uncertain significance
+MSH2	39C>A	Ser13Arg	Uncertain significance
+MSH2	39C>G	Ser13Arg	Uncertain significance
+MSH2	786G>T	Glu262Asp	Uncertain significance
+MSH2	786G>C	Glu262Asp	Uncertain significance
+MSH2	2267C>G	Thr756Ser	Uncertain significance
+MSH2	2266A>T	Thr756Ser	Uncertain significance
+VHL	30G>T	Glu10Asp	Uncertain significance
+VHL	30G>C	Glu10Asp	Uncertain significance
+VHL	21C>A	Asn7Lys	Uncertain significance
+VHL	21C>G	Asn7Lys	Uncertain significance
+MLH1	466T>C	Phe156Leu	Uncertain significance
+MLH1	468T>A	Phe156Leu	Uncertain significance
+VHL	27C>A	Asp9Glu	Uncertain significance
+VHL	27C>G	Asp9Glu	Uncertain significance
+MLH1	1470G>C	Met490Ile	Uncertain significance
+MLH1	1470G>T	Met490Ile	Uncertain significance
+MLH1	1470G>A	Met490Ile	Uncertain significance
+VHL	273C>A	Phe91Leu	Uncertain significance
+VHL	271T>C	Phe91Leu	Uncertain significance
+PMS2	1119T>G	Ser373Arg	Uncertain significance
+PMS2	1117A>C	Ser373Arg	Uncertain significance
+PMS2	1119T>A	Ser373Arg	Uncertain significance
+PMS2	1243G>T	Val415Leu	Uncertain significance
+PMS2	1243G>C	Val415Leu	Uncertain significance
+PTEN	571G>T	Val191Leu	Uncertain significance
+PTEN	571G>C	Val191Leu	Uncertain significance
+WT1	765G>T	Met255Ile	Uncertain significance
+WT1	765G>C	Met255Ile	Uncertain significance
+ACVRL1	1416G>C	Trp472Cys	Conflicting interpretations of pathogenicity
+ACVRL1	1416G>T	Trp472Cys	Uncertain significance
+MSH2	1830C>G	His610Gln	Uncertain significance
+MSH2	1830C>A	His610Gln	Uncertain significance
+MSH2	1831G>C	Val611Leu	Uncertain significance
+MSH2	1831G>T	Val611Leu	Uncertain significance
+VHL	169G>C	Gly57Arg	Uncertain significance
+VHL	169G>A	Gly57Arg	Uncertain significance
+PMS2	1686T>A	Phe562Leu	Uncertain significance
+PMS2	1686T>G	Phe562Leu	Uncertain significance
+PMS2	1684T>C	Phe562Leu	Uncertain significance
+BMPR1A	1572G>T	Met524Ile	Uncertain significance
+BMPR1A	1572G>C	Met524Ile	Uncertain significance
+PTEN	45A>T	Arg15Ser	Pathogenic/Likely pathogenic
+PTEN	45A>C	Arg15Ser	Pathogenic/Likely pathogenic
+TP53	861G>C	Glu287Asp	Uncertain significance
+TP53	861G>T	Glu287Asp	Uncertain significance
+SMAD4	1002G>T	Gln334His	Uncertain significance
+SMAD4	1002G>C	Gln334His	Uncertain significance
+TNNT2	865G>A	Gly289Arg	Uncertain significance
+TNNT2	865G>C	Gly289Arg	Uncertain significance
+MSH2	2176A>C	Met726Leu	Uncertain significance
+MSH2	2176A>T	Met726Leu	Uncertain significance
+PTEN	402G>T	Met134Ile	Likely pathogenic
+PTEN	402G>C	Met134Ile	Conflicting interpretations of pathogenicity
+PTEN	493G>A	Gly165Arg	Pathogenic
+PTEN	493G>C	Gly165Arg	Likely pathogenic
+PTEN	723T>G	Phe241Leu	Uncertain significance
+PTEN	721T>C	Phe241Leu	Likely pathogenic
+MEN1	1281T>A	Ser427Arg	Likely pathogenic
+MEN1	1279A>C	Ser427Arg	Uncertain significance
+MEN1	1A>T	Met1Leu	Pathogenic
+MEN1	1A>C	Met1Leu	Pathogenic
+SDHB	642G>C	Gln214His	Uncertain significance
+SDHB	642G>T	Gln214His	Likely pathogenic
+LDLR	1234A>C	Met412Leu	Pathogenic
+LDLR	1234A>T	Met412Leu	Uncertain significance
+LMNA	1600A>T	Thr534Ser	Uncertain significance
+LMNA	1601C>G	Thr534Ser	Uncertain significance
+PMS2	3G>A	Met1Ile	Pathogenic
+PMS2	3G>C	Met1Ile	Pathogenic
+PMS2	3G>T	Met1Ile	Pathogenic
+MEN1	537G>T	Glu179Asp	Uncertain significance
+MEN1	537G>C	Glu179Asp	Uncertain significance
+LMNA	1558T>C	Trp520Arg	Pathogenic
+LMNA	1558T>A	Trp520Arg	Pathogenic
+MSH2	2350T>C	Phe784Leu	Uncertain significance
+MSH2	2352T>G	Phe784Leu	Uncertain significance
+MSH2	2661C>G	Phe887Leu	Uncertain significance
+MSH2	2661C>A	Phe887Leu	Uncertain significance
+MSH2	1206A>T	Gln402His	Uncertain significance
+MSH2	1206A>C	Gln402His	Uncertain significance
+MSH2	2754G>C	Lys918Asn	Uncertain significance
+MSH2	2754G>T	Lys918Asn	Uncertain significance
+MSH2	2798C>G	Thr933Ser	Uncertain significance
+MSH2	2797A>T	Thr933Ser	Uncertain significance
+VHL	262T>A	Trp88Arg	Pathogenic
+VHL	262T>C	Trp88Arg	Pathogenic
+VHL	492G>T	Gln164His	Pathogenic
+VHL	492G>C	Gln164His	Pathogenic/Likely pathogenic
+MLH1	774C>G	Phe258Leu	Uncertain significance
+MLH1	772T>C	Phe258Leu	Uncertain significance
+TMEM43	396G>C	Glu132Asp	Uncertain significance
+TMEM43	396G>T	Glu132Asp	Uncertain significance
+MLH1	424T>A	Cys142Ser	Uncertain significance
+MLH1	425G>C	Cys142Ser	Uncertain significance
+TNNC1	186T>A	Asp62Glu	Uncertain significance
+TNNC1	186T>G	Asp62Glu	Uncertain significance
+PMS2	525G>T	Arg175Ser	Uncertain significance
+PMS2	525G>C	Arg175Ser	Uncertain significance
+PMS2	438A>T	Lys146Asn	Uncertain significance
+PMS2	438A>C	Lys146Asn	Uncertain significance
+PMS2	220G>A	Gly74Arg	Conflicting interpretations of pathogenicity
+PMS2	220G>C	Gly74Arg	Pathogenic/Likely pathogenic
+BMPR1A	1044A>T	Glu348Asp	Uncertain significance
+BMPR1A	1044A>C	Glu348Asp	Uncertain significance
+BMPR1A	1348G>C	Val450Leu	Uncertain significance
+BMPR1A	1348G>T	Val450Leu	Uncertain significance
+MAX	406G>A	Gly136Arg	Conflicting interpretations of pathogenicity
+MAX	406G>C	Gly136Arg	Uncertain significance
+TP53	720T>G	Ser240Arg	Uncertain significance
+TP53	718A>C	Ser240Arg	Likely pathogenic
+TP53	720T>A	Ser240Arg	Uncertain significance
+STK11	24G>C	Gln8His	Uncertain significance
+STK11	24G>T	Gln8His	Uncertain significance
+STK11	1179C>A	Asn393Lys	Uncertain significance
+STK11	1179C>G	Asn393Lys	Uncertain significance
+MUTYH	213C>G	Ser71Arg	Uncertain significance
+MUTYH	213C>A	Ser71Arg	Uncertain significance
+MSH2	184G>A	Gly62Arg	Uncertain significance
+MSH2	184G>C	Gly62Arg	Uncertain significance
+MSH2	534C>G	Phe178Leu	Uncertain significance
+MSH2	534C>A	Phe178Leu	Uncertain significance
+MSH2	2380A>T	Ile794Leu	Uncertain significance
+MSH2	2380A>C	Ile794Leu	Uncertain significance
+MSH2	1322C>G	Thr441Ser	Uncertain significance
+MSH2	1321A>T	Thr441Ser	Uncertain significance
+MSH2	1803G>T	Gln601His	Uncertain significance
+MSH2	1803G>C	Gln601His	Uncertain significance
+MSH2	2655G>T	Gln885His	Uncertain significance
+MSH2	2655G>C	Gln885His	Uncertain significance
+MLH1	1093A>C	Ser365Arg	Uncertain significance
+MLH1	1095T>A	Ser365Arg	Uncertain significance
+VHL	210G>C	Glu70Asp	Uncertain significance
+VHL	210G>T	Glu70Asp	Uncertain significance
+MLH1	1939G>T	Val647Leu	Uncertain significance
+MLH1	1939G>C	Val647Leu	Uncertain significance
+PMS2	2500A>T	Met834Leu	Uncertain significance
+PMS2	2500A>C	Met834Leu	Uncertain significance
+PMS2	1761T>G	Ser587Arg	Uncertain significance
+PMS2	1759A>C	Ser587Arg	Uncertain significance
+PMS2	406A>T	Met136Leu	Uncertain significance
+PMS2	406A>C	Met136Leu	Uncertain significance
+BMPR1A	1410G>A	Met470Ile	Uncertain significance
+BMPR1A	1410G>C	Met470Ile	Uncertain significance
+MEN1	210C>A	Asp70Glu	Uncertain significance
+MEN1	210C>G	Asp70Glu	Uncertain significance
+TP53	1104C>G	His368Gln	Uncertain significance
+TP53	1104C>A	His368Gln	Uncertain significance
+TP53	607G>C	Val203Leu	Uncertain significance
+TP53	607G>T	Val203Leu	Uncertain significance
+TP53	738G>A	Met246Ile	Conflicting interpretations of pathogenicity
+TP53	738G>T	Met246Ile	Uncertain significance
+TP53	349G>A	Gly117Arg	Uncertain significance
+TP53	349G>C	Gly117Arg	Uncertain significance
+STK11	54G>A	Met18Ile	Uncertain significance
+STK11	54G>T	Met18Ile	Uncertain significance
+STK11	888G>C	Lys296Asn	Uncertain significance
+STK11	888G>T	Lys296Asn	Uncertain significance
+MSH2	1041G>C	Lys347Asn	Uncertain significance
+MSH2	1041G>T	Lys347Asn	Uncertain significance
+PMS2	552G>T	Met184Ile	Uncertain significance
+PMS2	552G>A	Met184Ile	Uncertain significance
+BMPR1A	1242C>G	Asp414Glu	Uncertain significance
+BMPR1A	1242C>A	Asp414Glu	Uncertain significance
+PTEN	75G>T	Leu25Phe	Uncertain significance
+PTEN	75G>C	Leu25Phe	Pathogenic
+SMAD4	702T>G	Ser234Arg	Uncertain significance
+SMAD4	700A>C	Ser234Arg	Uncertain significance
+STK11	1264A>C	Ser422Arg	Uncertain significance
+STK11	1266C>G	Ser422Arg	Uncertain significance
+MLH1	1A>C	Met1Leu	Likely pathogenic
+MLH1	1A>T	Met1Leu	Pathogenic
+PMS2	75G>T	Gln25His	Uncertain significance
+PMS2	75G>C	Gln25His	Uncertain significance
+VHL	355T>C	Phe119Leu	Pathogenic
+VHL	357C>G	Phe119Leu	Pathogenic
+VHL	345C>G	His115Gln	Uncertain significance
+VHL	345C>A	His115Gln	Pathogenic/Likely pathogenic
+PMS2	283T>C	Phe95Leu	Uncertain significance
+PMS2	285T>G	Phe95Leu	Uncertain significance
+PMS2	792T>A	His264Gln	Uncertain significance
+PMS2	792T>G	His264Gln	Uncertain significance
+TP53	27C>G	Ser9Arg	Uncertain significance
+TP53	25A>C	Ser9Arg	Uncertain significance
+TP53	27C>A	Ser9Arg	Uncertain significance
+HNF1A	1A>T	Met1Leu	Pathogenic
+HNF1A	1A>C	Met1Leu	Likely pathogenic
+BAG3	1659A>T	Glu553Asp	Likely benign
+BAG3	1659A>C	Glu553Asp	Likely benign
+SMAD3	1A>C	Met1Leu	Likely pathogenic
+SMAD3	1A>T	Met1Leu	Pathogenic/Likely pathogenic
+LDLR	684G>C	Glu228Asp	Likely pathogenic
+LDLR	684G>T	Glu228Asp	Pathogenic
+SDHC	364T>C	Phe122Leu	Uncertain significance
+SDHC	366C>G	Phe122Leu	Uncertain significance
+MSH2	1882G>C	Gly628Arg	Uncertain significance
+MSH2	1882G>A	Gly628Arg	Uncertain significance
+MSH2	2335A>C	Met779Leu	Uncertain significance
+MSH2	2335A>T	Met779Leu	Uncertain significance
+MSH2	2319G>C	Lys773Asn	Uncertain significance
+MSH2	2319G>T	Lys773Asn	Uncertain significance
+MSH2	2743G>C	Val915Leu	Uncertain significance
+MSH2	2743G>T	Val915Leu	Uncertain significance
+VHL	430G>C	Gly144Arg	Uncertain significance
+VHL	430G>A	Gly144Arg	Uncertain significance
+VHL	513G>T	Lys171Asn	Uncertain significance
+VHL	513G>C	Lys171Asn	Uncertain significance
+PMS2	2502G>T	Met834Ile	Uncertain significance
+PMS2	2502G>C	Met834Ile	Uncertain significance
+PMS2	751G>C	Val251Leu	Uncertain significance
+PMS2	751G>T	Val251Leu	Uncertain significance
+PMS2	1188G>C	Met396Ile	Uncertain significance
+PMS2	1188G>A	Met396Ile	Likely benign
+BAG3	322G>T	Val108Leu	Uncertain significance
+BAG3	322G>C	Val108Leu	Uncertain significance
+PTEN	801G>T	Lys267Asn	Conflicting interpretations of pathogenicity
+PTEN	801G>C	Lys267Asn	Uncertain significance
+STK11	1102G>C	Val368Leu	Uncertain significance
+STK11	1102G>T	Val368Leu	Uncertain significance
+MSH2	2746A>T	Ile916Leu	Uncertain significance
+MSH2	2746A>C	Ile916Leu	Uncertain significance
+VHL	88G>A	Gly30Arg	Conflicting interpretations of pathogenicity
+VHL	88G>C	Gly30Arg	Uncertain significance
+MLH1	43G>T	Val15Leu	Uncertain significance
+MLH1	43G>C	Val15Leu	Uncertain significance
+MEN1	627G>C	Gln209His	Uncertain significance
+MEN1	627G>T	Gln209His	Uncertain significance
+BMPR1A	1459T>C	Trp487Arg	Uncertain significance
+BMPR1A	1459T>A	Trp487Arg	Conflicting interpretations of pathogenicity
+WT1	685G>A	Gly229Arg	Uncertain significance
+WT1	685G>C	Gly229Arg	Uncertain significance
+MEN1	1561A>T	Thr521Ser	Uncertain significance
+MEN1	1562C>G	Thr521Ser	Uncertain significance
+RB1	2601C>G	Asn867Lys	Uncertain significance
+RB1	2601C>A	Asn867Lys	Uncertain significance
+TP53	534C>A	His178Gln	Conflicting interpretations of pathogenicity
+TP53	534C>G	His178Gln	Uncertain significance
+STK11	10G>T	Val4Leu	Uncertain significance
+STK11	10G>C	Val4Leu	Uncertain significance
+RB1	474G>C	Leu158Phe	Uncertain significance
+RB1	474G>T	Leu158Phe	Uncertain significance
+SMAD4	688G>C	Gly230Arg	Uncertain significance
+SMAD4	688G>A	Gly230Arg	Uncertain significance
+GLA	525C>G	Asp175Glu	Conflicting interpretations of pathogenicity
+GLA	525C>A	Asp175Glu	Uncertain significance
+STK11	300A>C	Gln100His	Uncertain significance
+STK11	300A>T	Gln100His	Uncertain significance
+WT1	471C>A	His157Gln	Uncertain significance
+WT1	471C>G	His157Gln	Uncertain significance
+RB1	607G>C	Gly203Arg	Uncertain significance
+RB1	607G>A	Gly203Arg	Uncertain significance
+GLA	706T>A	Trp236Arg	Pathogenic
+GLA	706T>C	Trp236Arg	Pathogenic
+GAA	1572C>A	Asn524Lys	Uncertain significance
+GAA	1572C>G	Asn524Lys	Uncertain significance
+MSH2	2479G>C	Gly827Arg	Uncertain significance
+MSH2	2479G>A	Gly827Arg	Uncertain significance
+TNNT2	552G>T	Lys184Asn	Uncertain significance
+TNNT2	552G>C	Lys184Asn	Uncertain significance
+MUTYH	699G>T	Gln233His	Conflicting interpretations of pathogenicity
+MUTYH	699G>C	Gln233His	Conflicting interpretations of pathogenicity
+MSH2	2680A>T	Met894Leu	Uncertain significance
+MSH2	2680A>C	Met894Leu	Uncertain significance
+SMAD4	1339A>C	Met447Leu	Uncertain significance
+SMAD4	1339A>T	Met447Leu	Uncertain significance
+TTR	186G>T	Glu62Asp	Uncertain significance
+TTR	186G>C	Glu62Asp	Likely pathogenic
+TP53	840A>C	Arg280Ser	Likely pathogenic
+TP53	840A>T	Arg280Ser	Pathogenic
+TGFBR2	1134G>T	Arg378Ser	Uncertain significance
+TGFBR2	1134G>C	Arg378Ser	Pathogenic/Likely pathogenic
+SDHB	150C>A	Asp50Glu	Uncertain significance
+SDHB	150C>G	Asp50Glu	Uncertain significance
+MUTYH	1125G>C	Glu375Asp	Uncertain significance
+MUTYH	1125G>T	Glu375Asp	Uncertain significance
+MSH2	18G>C	Lys6Asn	Uncertain significance
+MSH2	18G>T	Lys6Asn	Uncertain significance
+MSH2	58G>C	Val20Leu	Uncertain significance
+MSH2	58G>T	Val20Leu	Uncertain significance
+MSH2	1668G>C	Leu556Phe	Uncertain significance
+MSH2	1668G>T	Leu556Phe	Uncertain significance
+MLH1	462C>A	Asp154Glu	Uncertain significance
+MLH1	462C>G	Asp154Glu	Uncertain significance
+PTEN	496G>C	Val166Leu	Uncertain significance
+PTEN	496G>T	Val166Leu	Uncertain significance
+MEN1	1648G>C	Val550Leu	Uncertain significance
+MEN1	1648G>T	Val550Leu	Uncertain significance
+TP53	891C>A	His297Gln	Uncertain significance
+TP53	891C>G	His297Gln	Uncertain significance
+SMAD4	3G>C	Met1Ile	Uncertain significance
+SMAD4	3G>A	Met1Ile	Uncertain significance
+STK11	1236C>A	Asn412Lys	Uncertain significance
+STK11	1236C>G	Asn412Lys	Uncertain significance
+PMS2	948C>A	His316Gln	Uncertain significance
+PMS2	948C>G	His316Gln	Uncertain significance
+SDHB	438C>A	Phe146Leu	Uncertain significance
+SDHB	438C>G	Phe146Leu	Uncertain significance
+MUTYH	1488G>A	Met496Ile	Uncertain significance
+MUTYH	1488G>C	Met496Ile	Uncertain significance
+MUTYH	1339T>A	Trp447Arg	Uncertain significance
+MUTYH	1339T>C	Trp447Arg	Uncertain significance
+MSH2	2628A>C	Glu876Asp	Uncertain significance
+MSH2	2628A>T	Glu876Asp	Uncertain significance
+TMEM127	136A>T	Thr46Ser	Uncertain significance
+TMEM127	137C>G	Thr46Ser	Uncertain significance
+VHL	463G>T	Val155Leu	Likely pathogenic
+VHL	463G>C	Val155Leu	Conflicting interpretations of pathogenicity
+PMS2	2556C>G	His852Gln	Uncertain significance
+PMS2	2556C>A	His852Gln	Uncertain significance
+PMS2	2025A>T	Glu675Asp	Uncertain significance
+PMS2	2025A>C	Glu675Asp	Uncertain significance
+BMPR1A	960C>A	Phe320Leu	Uncertain significance
+BMPR1A	960C>G	Phe320Leu	Uncertain significance
+STK11	69C>G	Asp23Glu	Uncertain significance
+STK11	69C>A	Asp23Glu	Uncertain significance
+MUTYH	763A>C	Met255Leu	Uncertain significance
+MUTYH	763A>T	Met255Leu	Uncertain significance
+MSH2	2154A>C	Gln718His	Uncertain significance
+MSH2	2154A>T	Gln718His	Uncertain significance
+MLH1	2049C>G	Phe683Leu	Uncertain significance
+MLH1	2049C>A	Phe683Leu	Uncertain significance
+MLH1	2136G>T	Trp712Cys	Uncertain significance
+MLH1	2136G>C	Trp712Cys	Uncertain significance
+PMS2	2244G>C	Lys748Asn	Uncertain significance
+PMS2	2244G>T	Lys748Asn	Uncertain significance
+WT1	763A>C	Met255Leu	Uncertain significance
+WT1	763A>T	Met255Leu	Uncertain significance
+WT1	76G>A	Gly26Arg	Uncertain significance
+WT1	76G>C	Gly26Arg	Uncertain significance
+RB1	1731G>T	Lys577Asn	Uncertain significance
+RB1	1731G>C	Lys577Asn	Uncertain significance
+TP53	129G>T	Leu43Phe	Uncertain significance
+TP53	129G>C	Leu43Phe	Uncertain significance
+HNF1A	139G>C	Gly47Arg	Uncertain significance
+HNF1A	139G>A	Gly47Arg	Uncertain significance
+LMNA	1234G>C	Gly412Arg	Uncertain significance
+LMNA	1234G>A	Gly412Arg	Uncertain significance
+MUTYH	1011G>T	Lys337Asn	Uncertain significance
+MUTYH	1011G>C	Lys337Asn	Uncertain significance
+PCSK9	1119C>A	Ser373Arg	Uncertain significance
+PCSK9	1119C>G	Ser373Arg	Uncertain significance
+MSH2	1408G>T	Val470Leu	Uncertain significance
+MSH2	1408G>C	Val470Leu	Uncertain significance
+BMPR1A	705G>T	Gln235His	Uncertain significance
+BMPR1A	705G>C	Gln235His	Uncertain significance
+BMPR1A	1281G>T	Met427Ile	Uncertain significance
+BMPR1A	1281G>A	Met427Ile	Uncertain significance
+PTEN	1164G>C	Glu388Asp	Uncertain significance
+PTEN	1164G>T	Glu388Asp	Uncertain significance
+PTEN	1197A>C	Gln399His	Uncertain significance
+PTEN	1197A>T	Gln399His	Uncertain significance
+PKP2	223G>A	Gly75Arg	Uncertain significance
+PKP2	223G>C	Gly75Arg	Uncertain significance
+TP53	684C>G	Asp228Glu	Uncertain significance
+TP53	684C>A	Asp228Glu	Uncertain significance
+TP53	576G>T	Gln192His	Uncertain significance
+TP53	576G>C	Gln192His	Likely benign
+LDLR	1575T>G	Asp525Glu	Uncertain significance
+LDLR	1575T>A	Asp525Glu	Uncertain significance
+STK11	612C>A	Phe204Leu	Uncertain significance
+STK11	612C>G	Phe204Leu	Uncertain significance
+MSH2	1897A>T	Ile633Leu	Uncertain significance
+MSH2	1897A>C	Ile633Leu	Uncertain significance
+PMS2	2526C>G	Asn842Lys	Uncertain significance
+PMS2	2526C>A	Asn842Lys	Uncertain significance
+PMS2	744T>A	Ser248Arg	Uncertain significance
+PMS2	742A>C	Ser248Arg	Uncertain significance
+PMS2	744T>G	Ser248Arg	Uncertain significance
+WT1	202G>A	Gly68Arg	Uncertain significance
+WT1	202G>C	Gly68Arg	Uncertain significance
+MSH2	2394T>G	Asn798Lys	Uncertain significance
+MSH2	2394T>A	Asn798Lys	Uncertain significance
+MLH1	1123A>C	Ser375Arg	Uncertain significance
+MLH1	1125T>G	Ser375Arg	Uncertain significance
+BAG3	1323C>G	Asn441Lys	Uncertain significance
+BAG3	1323C>A	Asn441Lys	Uncertain significance
+SDHB	741G>T	Met247Ile	Uncertain significance
+SDHB	741G>A	Met247Ile	Uncertain significance
+SDHB	741G>C	Met247Ile	Uncertain significance
+PMS2	2373C>G	Ser791Arg	Uncertain significance
+PMS2	2373C>A	Ser791Arg	Uncertain significance
+PMS2	1679G>C	Cys560Ser	Uncertain significance
+PMS2	1678T>A	Cys560Ser	Uncertain significance
+BAG3	30G>A	Met10Ile	Uncertain significance
+BAG3	30G>T	Met10Ile	Uncertain significance
+MSH2	255T>G	Phe85Leu	Uncertain significance
+MSH2	253T>C	Phe85Leu	Uncertain significance
+MSH2	2070A>C	Gln690His	Uncertain significance
+MSH2	2070A>T	Gln690His	Uncertain significance
+TMEM127	55G>C	Gly19Arg	Uncertain significance
+TMEM127	55G>A	Gly19Arg	Uncertain significance
+PTEN	978C>A	Asp326Glu	Uncertain significance
+PTEN	978C>G	Asp326Glu	Uncertain significance
+WT1	24C>G	Asp8Glu	Uncertain significance
+WT1	24C>A	Asp8Glu	Uncertain significance
+HNF1A	58G>A	Gly20Arg	Pathogenic
+HNF1A	58G>C	Gly20Arg	Likely pathogenic
+BMPR1A	520T>C	Phe174Leu	Uncertain significance
+BMPR1A	522T>A	Phe174Leu	Uncertain significance
+BMPR1A	588T>G	Asp196Glu	Uncertain significance
+BMPR1A	588T>A	Asp196Glu	Uncertain significance
+NF2	375G>C	Gln125His	Uncertain significance
+NF2	375G>T	Gln125His	Uncertain significance
+ENG	586T>A	Trp196Arg	Uncertain significance
+ENG	586T>C	Trp196Arg	Likely pathogenic
+DSC2	1239T>G	Asn413Lys	Uncertain significance
+DSC2	1239T>A	Asn413Lys	Uncertain significance
+PTEN	435T>A	Phe145Leu	Uncertain significance
+PTEN	433T>C	Phe145Leu	Uncertain significance
+TP53	147T>G	Asp49Glu	Uncertain significance
+TP53	147T>A	Asp49Glu	Uncertain significance
+SMAD4	542C>G	Thr181Ser	Uncertain significance
+SMAD4	541A>T	Thr181Ser	Uncertain significance
+MSH2	510G>T	Gln170His	Uncertain significance
+MSH2	510G>C	Gln170His	Uncertain significance
+CASQ2	981C>A	Phe327Leu	Uncertain significance
+CASQ2	979T>C	Phe327Leu	Uncertain significance
+TP53	540G>C	Glu180Asp	Uncertain significance
+TP53	540G>T	Glu180Asp	Uncertain significance
+MLH1	1840T>C	Phe614Leu	Uncertain significance
+MLH1	1842T>G	Phe614Leu	Uncertain significance
+HNF1A	225C>A	Asp75Glu	Uncertain significance
+HNF1A	225C>G	Asp75Glu	Uncertain significance
