@@ -18,3 +18,6 @@ mnv_codons	: codon change of MNV
 snv1_amino_acids: amino acid change of snv1
 snv2_amino_acids: amino acid change of snv2
 mnv_amino_acids: amino acid change of MNV
+clinvar1: clinical significance of snv1
+clinvar2: clinical significance of snv2
+clinvar_mnv: clinical significance of mnv
