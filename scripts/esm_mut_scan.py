@@ -237,16 +237,12 @@ def main(args):
                                 alphabet, 
                                 args.offset_idx
                             )
-                        results =  pd.concat([
-                            results,
-                            mut_df.merge(
-                                res_df,
-                                left_on=args.mutation_col,
-                                right_on=args.mutation_col,
-                                how="right"
-                            )
-                        ]
-                        )
+                        mut_df.merge(
+                            res_df,
+                            left_on=args.mutation_col,
+                            right_on=args.mutation_col,
+                            how="right"
+                        ).to_csv(outfname(gene), sep='\t', header=(i == 0), mode='w' if i == 0 else 'a')
                 elif args.scoring_strategy == "co-masked":
                     res_df = mut_scan_co_masked(
                         args, 
@@ -258,51 +254,12 @@ def main(args):
                         [d[1] for d in data[i:i+args.mut_chunks]], 
                         alphabet
                         )
-                    results =  pd.concat([
-                            results,
-                            mut_df.merge(
-                                res_df,
-                                left_on=args.mutation_col,
-                                right_on=args.mutation_col,
-                                how="right"
-                            )
-                        ]
-                    )
-                elif args.scoring_strategy == "masked-marginals":
-                    all_token_probs = []
-                    for j in tqdm(range(batch_tokens.size(1)), leave=False):
-                        batch_tokens_masked = batch_tokens.clone()
-                        batch_tokens_masked[:, j] = alphabet.mask_idx
-                        with torch.no_grad():
-                            token_probs = torch.log_softmax(
-                                model(batch_tokens_masked.cuda())["logits"], dim=-1
-                            )
-                        all_token_probs.append(token_probs[:, j])  # vocab size
-                    token_probs = torch.cat(all_token_probs, dim=0).reshape(
-                        [batch_tokens.shape[0], batch_tokens.shape[1], -1]
-                    )
-                    for j in range(token_probs.shape[0]):
-                        res_df = mut_scan(
-                                args,
-                                model_location, 
-                                data[i+j][0], 
-                                sequence,
-                                token_probs[j, :, :], 
-                                token_probs[j, :, :], 
-                                alphabet, 
-                                args.offset_idx
-                            )
-                        results =  pd.concat([
-                            results,
-                            mut_df.merge(
-                                res_df,
-                                left_on=args.mutation_col,
-                                right_on=args.mutation_col,
-                                how="right"
-                            )
-                        ]
-                        )
-            results.to_csv(outfname(gene), sep='\t')
+                    mut_df.merge(
+                        res_df,
+                        left_on=args.mutation_col,
+                        right_on=args.mutation_col,
+                        how="right"
+                    ).to_csv(outfname(gene), sep='\t', header=(i == 0), mode='w' if i == 0 else 'a')
 
 
 if __name__ == "__main__":
