@@ -37,7 +37,7 @@ def read_fasta(fname):
 def uniprot_ids_to_gene_names():
     return {
         k.split()[0].split("|")[-1]: [x.split("=")[-1] for x in k.split() if x.startswith("GN=")][0]
-        for k in read_fasta("data/acmg.filtered.genes.fa")
+        for k in read_fasta("data/misc/acmg.filtered.genes.fa")
     }
 
 FROM_UNIPROT = uniprot_ids_to_gene_names()
