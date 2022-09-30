@@ -1,4 +1,4 @@
-		GENEINFO	AA_CHANGE	GROUP	MUTATION	GENE	CPD_0	CPD_1	CPD_2	CPD_5	gnomAD_AF
+	GENEINFO	AA_CHANGE	GROUP	MUTATION	GENE	CPD_0	CPD_1	CPD_2	CPD_5	gnomAD_AF
 0	SDHB:6390	Ser279Ala	VUS	S279A	SDHB	['speTri2', 'hetGla2', 'cavPor3', 'chiLan1', 'octDeg1', 'ochPri3', 'eleEdw1', 'echTel2']	['speTri2', 'hetGla2', 'chiLan1']	['speTri2']	No	0.0
 1	SDHB:6390	Ser279Thr	VUS	S279T	SDHB	No	No	No	No	0.0
 2	SDHB:6390	Lys274Glu	VUS	K274E	SDHB	No	No	No	No	0.0
