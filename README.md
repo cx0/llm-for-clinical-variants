@@ -11,8 +11,8 @@ structural features of proteins that are missed by other structure predictors li
 
 | Model                                                      |    Number of layers | Number of parameters   |    Training dataset*    | Implementation in our work |
 | ----------------------------------------------------------------------------------------------------- | :------------------: | :------------------: | :------------------: |:------------------: |
-| [ESM-2](https://github.com/facebookresearch/esm#available-models)  | 33 | 650M | UR50/D | Single run |
-| [ESM-1v](https://github.com/facebookresearch/esm#available-models) | 33 | 650M | UR90/S | Ensemble of 5 models|
+| [ESM-2](https://github.com/facebookresearch/esm#available-models)  | 33 | 650M | UR50/D | Single model with `wt-marginals` scoring strategy |
+| [ESM-1v](https://github.com/facebookresearch/esm#available-models) | 33 | 650M | UR90/S | Ensemble of 5 models with the same scoring strategy as ESM-2 |
 
 * Briefly summarize the difference and its implication for our comparison.
 
