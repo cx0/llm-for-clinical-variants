@@ -21,9 +21,9 @@ structural features of proteins that are missed by other structure predictors li
 | Description                                                      |    Data source | 
 | ----------------------------------------------------------------------------------------------------- | :------------------: | 
 | List of clinically actionable genes  | [ACMG v3.1](https://www.gimjournal.org/article/S1098-3600(21)05076-0/fulltext#secst0025) |
-| gnomAD | [v2 GRCh38 liftover](https://gnomad.broadinstitute.org/downloads#exac-variants) |
+| Allele frequency | [gnomAD v2 GRCh38 liftover](https://gnomad.broadinstitute.org/downloads#exac-variants) |
 | ClinVar annotations | [Accessed on 09/17/2022](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/) | 
-| MSA | [UCSC multiz-100 way CDS alignment](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/multiz100way/alignments/) | 
+| Multiple sequence alignments | [UCSC multiz-100 way CDS alignment](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/multiz100way/alignments/) | 
 
 
 ## Citation
