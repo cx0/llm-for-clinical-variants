@@ -14,6 +14,8 @@ structural features of proteins that are missed by other structure predictors li
 | [ESM-2](https://github.com/facebookresearch/esm#available-models)  | 33 | 650M | UR50/D | Single model with `wt-marginals` scoring strategy |
 | [ESM-1v](https://github.com/facebookresearch/esm#available-models) | 33 | 650M | UR90/S | Ensemble of 5 models with the same scoring strategy as ESM-2 |
 | [ESMFold](https://github.com/facebookresearch/esm#available-models)  | 48 | 690M | PDB + UR50 | Structure prediction for _BAG3_ |
+| [AlphaFold2](https://www.alphafold.ebi.ac.uk/)  |  |  | | AlphaFold2 structural model prediction for _BAG3_ |
+| [Cross-protein transfer](https://github.com/songlab-cal/CPT)  |  |  | | Zero-shot prediction scores for all 53 ACMG genes except _MAX_ and _HNF1A_ |
 
 
 ### Data on gene list and sequence variation
