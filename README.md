@@ -32,16 +32,16 @@ This repo contains the scripts and metadata used in our work presented at NeurIP
 If you find this work useful, please cite it as follows:
 
 ```bibtex
-@misc{,
-  doi = {},
-  url = {},
-  author = {},
-  keywords = {Machine Learning (cs.LG), Genomics (q-bio.GN), Applications (stat.AP), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Biological sciences, FOS: Biological sciences},
-  title = {},
+@misc{
+  url = {https://arxiv.org/abs/2211.10000},
+  author = {Soylemez, Onuralp and Cordero, Pablo},
+  keywords = {Machine Learning (cs.LG), Genomics (q-bio.GN), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Biological sciences, FOS: Biological sciences},
+  title = {Protein language model rescue mutations highlight variant effects and structure in clinically relevant genes},
   publisher = {arXiv},
   year = {2022},
   copyright = {Creative Commons Attribution 4.0 International}
 }
+
 ```
 
 ## Feedback
